@@ -12,8 +12,8 @@ public class DemoStream {
 	public static void main(String[] args) {
 		Stream<Integer> stream = Stream.of(1,4,2,100,466, 50,30);
 		stream.forEach(System.out::println);
-		
-		//stream.forEach(System.out::println);
+		stream = Stream.of(1,4,2,100,466, 50,30, 40);
+		stream.forEach(System.out::println);
 		
 		//Exception in thread "main" java.lang.IllegalStateException: stream has already been operated upon or closed
 		//u get stream and do the work and forget about it. 
