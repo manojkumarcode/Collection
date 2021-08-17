@@ -36,11 +36,13 @@ public class DemoEmployeeHashMap {
 		Set<Entry<String, Employee>> entries = map.entrySet();
 		Iterator<Entry<String, Employee>> iterator = entries.iterator();
 		
-		System.out.println("Printing using Iterator");
+		System.out.println("Put values to HashMap while Iterating");
 		
 		while(iterator.hasNext()) {
 		Entry<String, Employee> entry = iterator.next();
 		System.out.println(entry);
+		map.put("abcd", new Employee(161, "John", 19030));
+		map.put("wxyz", new Employee(162, "Tee", 19400));
 		}
 		
 
